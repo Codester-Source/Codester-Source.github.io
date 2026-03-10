@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-<title>Codester Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آية النهمي | بورتفوليو</title>
+    <style>
+        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--light); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; max-width: 500px; border: 1px solid #e2e8f0; }
+        .profile-img { width: 100px; height: 100px; background: var(--primary); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; }
+        h1 { color: var(--dark); margin: 0; font-size: 28px; }
+        p { color: #64748b; line-height: 1.6; margin: 15px 0; }
+        .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
+        .btn { text-decoration: none; background: var(--primary); color: white; padding: 10px 25px; border-radius: 8px; font-weight: 500; transition: 0.3s; }
+        .btn:hover { background: #1d4ed8; }
+    </style>
 </head>
 <body>
-
-<h1>Welcome to my portfolio</h1>
-<p>My name is Aya Al-Nehmi</p>
-
+    <div class="card">
+        <div class="profile-img">A</div>
+        <h1>آية النهمي</h1>
+        <p>مرحباً بكم في موقعي الشخصي! أنا طالبة تقنية أخطو خطواتي الأولى في بناء مشاريع الويب. هذا الموقع هو مساحتي الخاصة لمشاركة رحلتي وتطوري.</p>
+        <div class="social-links">
+            <a href="https://github.com/Codester-Source" class="btn">حسابي في GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
