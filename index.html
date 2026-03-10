@@ -1,29 +1,135 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آية النهمي | بورتفوليو</title>
-    <style>
-        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--light); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; max-width: 500px; border: 1px solid #e2e8f0; }
-        .profile-img { width: 100px; height: 100px; background: var(--primary); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; }
-        h1 { color: var(--dark); margin: 0; font-size: 28px; }
-        p { color: #64748b; line-height: 1.6; margin: 15px 0; }
-        .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
-        .btn { text-decoration: none; background: var(--primary); color: white; padding: 10px 25px; border-radius: 8px; font-weight: 500; transition: 0.3s; }
-        .btn:hover { background: #1d4ed8; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aya Alnehmi | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="card">
-        <div class="profile-img">A</div>
-        <h1>آية النهمي</h1>
-        <p>مرحباً بكم في موقعي الشخصي! أنا طالبة تقنية أخطو خطواتي الأولى في بناء مشاريع الويب. هذا الموقع هو مساحتي الخاصة لمشاركة رحلتي وتطوري.</p>
-        <div class="social-links">
-            <a href="https://github.com/Codester-Source" class="btn">حسابي في GitHub</a>
-        </div>
-    </div>
+
+<nav>
+<h2>Aya Alnehmi</h2>
+
+<div class="nav-right">
+<button id="langToggle">AR</button>
+
+<ul>
+<li><a href="#about" data-en="About" data-ar="نبذة">About</a></li>
+<li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+<li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+<li><a href="#research" data-en="Research" data-ar="الأبحاث">Research</a></li>
+<li><a href="#blog" data-en="Blog" data-ar="المدونة">Blog</a></li>
+<li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+</ul>
+</div>
+
+</nav>
+
+<!-- Hero Section -->
+<section class="hero fade">
+<h1 data-en="Hi, I'm Aya Alnehmi" data-ar="مرحبًا، أنا آية النهـمي">Hi, I'm Aya Alnehmi</h1>
+<p data-en="Computer Science Student passionate about AI, Bioinformatics and Software Development" data-ar="طالبة علوم حاسوب مهتمة بالذكاء الاصطناعي والمعلوماتية الحيوية وتطوير البرمجيات">
+Computer Science Student passionate about AI, Bioinformatics and Software Development
+</p>
+<a class="btn" href="https://github.com/Codester-Source">GitHub</a>
+</section>
+
+<!-- About -->
+<section id="about" class="fade">
+<h2 data-en="About Me" data-ar="نبذة عني">About Me</h2>
+<p data-en="I am a Computer Science student who enjoys building software and exploring complex ideas through programming." 
+data-ar="أنا طالبة علوم حاسوب أستمتع ببناء الأنظمة البرمجية واستكشاف الأفكار المعقدة عبر البرمجة.">
+I am a Computer Science student who enjoys building software and exploring complex ideas through programming.
+</p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="fade">
+<h2 data-en="Skills" data-ar="المهارات">Skills</h2>
+<div class="cards">
+<div class="card">
+<h3>Languages</h3>
+<p>C++ • Python • SQL • Dart</p>
+</div>
+<div class="card">
+<h3>Frameworks</h3>
+<p>Django • Laravel • Flutter</p>
+</div>
+<div class="card">
+<h3>Tools</h3>
+<p>Figma • WordPress • Git</p>
+</div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="fade">
+<h2 data-en="Projects" data-ar="المشاريع">Projects</h2>
+<div class="cards">
+<div class="card interactive" data-link="#">
+<img src="placeholder1.png" alt="Shipping Platform">
+<h3>Shipping Aggregator Platform</h3>
+<p>Platform that gathers shipping companies and stores in one system with chatbot communication.</p>
+<a href="#" class="btn" target="_blank">View Project</a>
+</div>
+
+<div class="card interactive" data-link="#">
+<img src="placeholder2.png" alt="Beauty App">
+<h3>Beauty Recipes App</h3>
+<p>Mobile app built with Flutter providing skincare and beauty recipes.</p>
+<a href="#" class="btn" target="_blank">View Project</a>
+</div>
+
+<div class="card interactive" data-link="#">
+<img src="placeholder3.png" alt="Freelance Projects">
+<h3>Freelance Academic Projects</h3>
+<p>Programming and database projects developed for university students.</p>
+<a href="#" class="btn" target="_blank">View Project</a>
+</div>
+</div>
+</section>
+
+<!-- Research -->
+<section id="research" class="fade">
+<h2 data-en="Research" data-ar="الأبحاث">Research</h2>
+<div class="card">
+<h3>BRCA1 Variant Classification</h3>
+<p>Structure and Conservation Guided In Silico Classification of BRCA1 Missense Variants.</p>
+</div>
+</section>
+
+<!-- Blog -->
+<section id="blog" class="fade">
+<h2 data-en="Blog" data-ar="المدونة">Blog</h2>
+<div class="cards">
+<div class="card">
+<h3>My First Technical Idea</h3>
+<p>Share tips or small guides about AI, Bioinformatics or programming projects.</p>
+</div>
+<div class="card">
+<h3>Learning Flutter</h3>
+<p>Steps and small notes about building mobile apps with Flutter.</p>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="fade">
+<h2 data-en="Contact" data-ar="التواصل">Contact</h2>
+<p>Email: aya.alnehmi@gmail.com</p>
+<p>GitHub: Codester-Source</p>
+</section>
+
+<footer>
+<p>© 2026 Aya Alnehmi</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
